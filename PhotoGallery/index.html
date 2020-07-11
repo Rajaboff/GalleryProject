@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Photo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="navbar">
+                <div class="left-nav">
+                    <span class="user">Привет, Гость</span>
+                </div>
+                <div class="right-nav">
+                    <a class="loginLnk" href="#" onclick="v.loginLink()">Вход</a>
+                    <button class="signBtn" onclick="v.signupLink()">
+                        <a class="signupLnk" href="#">Регистрация</a>
+                    </button>
+                    <button class="outBtn" onclick="v.logoutfunc()">
+                        <a class="logoutLink" href="#" style="display: none;">Выход</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="other">
+            <div class="loginPart">
+                <p class="title">Вход</p>
+                <input type="text" placeholder="Никнейм" class="usernameInput">
+                <br>
+                <input type="password" placeholder="Пароль" class="passwordInput">
+                <br>
+                <button onclick="c.login()">Войти</button>
+                <span style="display: none;" class="loginMistakes"></span>
+            </div>
+
+            <div class="signupPart" style="display: none;">
+                <p class="title">Регистрация</p>
+                <input type="text" placeholder="Никнейм" class="usernamesign">
+                <br>
+                <input type="email" placeholder="Электронная почта" class="emailsign">
+                <br>
+                <input type="password" placeholder="Пароль" class="passwordsign">
+                <br>
+                <button onclick="c.signup()">Зарегистрироваться</button>
+                <span style="display: none;" class="signMistakes"></span>
+            </div>
+            <div class="content" style="display: none;">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

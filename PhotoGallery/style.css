@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+html, body {
+    width: 100%;
+    height: auto;
+    background-color: rgb(250, 250, 250);
+    background-position: center;
+}
+
+img {
+    width: 32.9%;
+    margin: 0 2px;
+    transition: 0.1s;
+}
+
+img:hover{
+    opacity: 0.8;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    width: 100%;
+    background-color: #fff;
+    height: 65px;
+    margin-bottom: 25px;
+}
+
+.navbar {
+    padding-top: 15px;
+    width: 75%;
+    display: flex;
+    justify-content: space-between  ;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.right-nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.signBtn {
+    border-radius: 5px;
+    margin-left: 30px;
+    height: 35px;
+    border: none;
+    background-color: cornflowerblue;
+    transition: 0.1s;
+}
+
+.signBtn:hover{
+    background-color: rgb(74, 114, 189);
+}
+
+.outBtn {
+    border-radius: 5px;
+    height: 35px;
+    border: none;
+    background-color: tomato;
+    transition: 0.1s;
+}
+
+.outBtn:hover {
+    background-color: rgb(204, 79, 58);
+}
+
+.signBtn > a, .outBtn > a {
+    color: white;
+    font-weight: 600;
+    margin: 0 23px;
+}
+
+.user {
+    margin-right: 40px;
+    color: grey;
+}
+
+.other{
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+}
+
+.searchPart {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.loginPart, .signupPart {
+    text-align: center;
+    margin-top: 115px;
+}
+
+.loginPart > span, .signupPart > span {
+    margin-top: 25px;
+}
+
+.title {
+    margin: 35px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.loginPart > input, .signupPart > input {
+    margin-bottom: 20px;
+    width: 350px;
+    height: 40px;
+    padding: 0 25px;
+}
+
+.loginPart > button, .signupPart > button {
+    margin-top: 15px;
+    border-radius: 5px;
+    height: 35px;
+    border: none;
+    background-color: lightgreen;
+    color: white;
+    font-weight: 600;
+    padding: 0 23px;
+    transition: 0.1s;
+}
+
+.loginPart > button:hover, .signupPart > button:hover{
+    background-color: rgb(100, 177, 100);
+}
+
+input {
+    border: 1px solid grey;
+    border-radius: 5px;
+    transition: 0.1s;
+}
+
+input:hover {
+    border: 1px solid black;
+}
+
+@media (min-width: 1800px) {
+    img {
+        width: 24.6%;
+    }
+}
+
+@media (min-width: 630px) and (max-width: 1245px) {
+    img {
+        width: 49.1%;
+    }
+}
+
+@media (max-width: 629px) {
+    img {
+        width: 100%;
+    }
+}
